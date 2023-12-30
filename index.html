@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <section class="area-de-consulta">
+            <h2>Consulte seu CEP</h2>
+            <div class="aviso possiveis-ceps">
+                Caso não saiba seu CEP, você também pode descobri-lo digitando outras informações abaixo.
+            </div>
+            <form method="get">
+                <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" class="form-control" placeholder="Digite um CEP e veja se as informações correspondem" maxlength="9">
+                    <small>Cep</small>
+                </div>
+                <div class="form-group">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" class="form-control" placeholder="Digite o nome da rua">
+                    <small>Rua</small>
+                </div>
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" class="form-control" placeholder="Digite o nome do bairro">
+                    <small>Bairro</small>
+                </div>
+                <div class="form-group">
+                    <label for="localidade">Localidade</label>
+                    <input type="text" id="localidade" class="form-control" placeholder="Digite a cidade">
+                    <small>Cidade</small>
+                </div>
+                <div class="form-group">
+                    <label for="uf">UF</label>
+                    <input type="text" id="uf" class="form-control" placeholder="Digite a sigla do estado ex: RJ">
+                    <small>UF</small>
+                </div>
+                    <button id="busca-cep">
+                        Buscar CEP
+                    </button>
+            </form>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
